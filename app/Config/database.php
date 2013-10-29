@@ -15,9 +15,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'database_name',
+		'login' => 'hayasaki',
+		'password' => 'tsukasa',
+		'database' => 'hayasaki',
 		'encoding' => 'utf8',
 	);
 
