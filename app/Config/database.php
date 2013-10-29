@@ -5,9 +5,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-        'login' => 'user',
-        'password' => 'password',
-        'database' => 'database_name',
+		'login' => 'user',
+		'password' => 'password',
+		'database' => 'database_name',
 		'encoding' => 'utf8',
 	);
 
@@ -15,9 +15,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-        'login' => 'user',
-        'password' => 'password',
-        'database' => 'database_name',
+		'login' => 'user',
+		'password' => 'password',
+		'database' => 'database_name',
 		'encoding' => 'utf8',
 	);
 
@@ -25,9 +25,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-        'login' => 'user',
-        'password' => 'password',
-        'database' => 'database_name',
+		'login' => 'user',
+		'password' => 'password',
+		'database' => 'database_name',
 		'encoding' => 'utf8',
 	);
 
@@ -35,9 +35,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-        'login' => 'user',
-        'password' => 'password',
-        'database' => 'database_name',
+		'login' => 'user',
+		'password' => 'password',
+		'database' => 'database_name',
 		'encoding' => 'utf8',
 	);
 
@@ -45,30 +45,30 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-        'login' => 'user',
-        'password' => 'password',
-        'database' => 'database_name',
+		'login' => 'user',
+		'password' => 'password',
+		'database' => 'database_name',
 		'encoding' => 'utf8',
 	);
 
-    /**
+	/**
      * constructor
      *
      * @access public
      * @return void
      */
-    public function __construct() {
-        switch (env('CAKE_ENV_MODE')) {
-            case 'development':
-                $this->default = $this->development;
-                break;
-            case 'staging':
-                $this->default = $this->staging;
-                break;
-            case 'production':
-            default:
-                $this->default = $this->production;
-                break;
-        }
-    }
+	public function __construct() {
+		switch (env('CAKE_ENV_MODE')) {
+		case 'development':
+			$this->default = $this->development;
+			break;
+		case 'staging':
+			$this->default = $this->staging;
+			break;
+		case 'production':
+		default:
+			$this->default = $this->production;
+		break;
+		}
+	}
 }

@@ -115,22 +115,12 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 
-/**
- * 権限
- */
-define('AUTH_WATCH', 0);
-define('AUTH_ALL', 1);
-Configure::write('auth_list01', array(
-            AUTH_WATCH => "閲覧",
-            AUTH_ALL => "ALL",
-        ));
-
 // Exception メール無視設定
 Configure::write('ExceptionNotifier.deniedException', array(
-    'NotFoundException',
-    'MissingControllerException',
-    'MissingActionException',
-    'ForbiddenException',
+	'NotFoundException',
+	'MissingControllerException',
+	'MissingActionException',
+	'ForbiddenException',
 ));
 
 /**
@@ -145,17 +135,17 @@ Configure::write('ExceptionNotifier.deniedException', array(
  * export CAKE_ENV_MODE="development"
  */
 switch (env('CAKE_ENV_MODE')) {
-    case 'development':
-        // development
-        require 'Bootstraps/development.php';
-        break;
-    case 'staging':
-        // staging
-        require 'Bootstraps/staging.php';
-        break;
-    case 'production':
-    default:
-        // prodction
-        require 'Bootstraps/production.php';
-        break;
+	case 'development':
+		// development
+		require 'Bootstraps/development.php';
+		break;
+	case 'staging':
+		// staging
+		require 'Bootstraps/staging.php';
+		break;
+	case 'production':
+	default:
+		// prodction
+		require 'Bootstraps/production.php';
+	break;
 }
