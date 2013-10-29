@@ -5,9 +5,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-		'login' => 'root',
-		'password' => 'root',
-		'database' => 'test',
+        'login' => 'user',
+        'password' => 'password',
+        'database' => 'database_name',
 		'encoding' => 'utf8',
 	);
 
@@ -15,9 +15,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-        'login' => 'root',
-        'password' => 'root',
-        'database' => 'test',
+        'login' => 'user',
+        'password' => 'password',
+        'database' => 'database_name',
 		'encoding' => 'utf8',
 	);
 
@@ -25,9 +25,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-        'login' => 'root',
-        'password' => 'root',
-        'database' => 'test',
+        'login' => 'user',
+        'password' => 'password',
+        'database' => 'database_name',
 		'encoding' => 'utf8',
 	);
 
@@ -35,9 +35,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-        'login' => 'root',
-        'password' => 'root',
-        'database' => 'test',
+        'login' => 'user',
+        'password' => 'password',
+        'database' => 'database_name',
 		'encoding' => 'utf8',
 	);
 
@@ -45,9 +45,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-        'login' => 'root',
-        'password' => 'root',
-        'database' => 'test',
+        'login' => 'user',
+        'password' => 'password',
+        'database' => 'database_name',
 		'encoding' => 'utf8',
 	);
 
