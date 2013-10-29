@@ -7,7 +7,7 @@ class DATABASE_CONFIG {
 		'host' => '127.0.0.1',
 		'login' => 'root',
 		'password' => 'root',
-		'database' => 'hoge',
+		'database' => 'test',
 		'encoding' => 'utf8',
 	);
 
@@ -15,9 +15,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-		'login' => 'hayasaki',
-		'password' => 'tsukasa',
-		'database' => 'hayasaki',
+        'login' => 'root',
+        'password' => 'root',
+        'database' => 'test',
 		'encoding' => 'utf8',
 	);
 
@@ -25,9 +25,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-		'login' => 'root',
-		'password' => 'root',
-		'database' => 'anntena',
+        'login' => 'root',
+        'password' => 'root',
+        'database' => 'test',
 		'encoding' => 'utf8',
 	);
 
@@ -35,9 +35,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-		'login' => 'root',
-		'password' => 'root',
-		'database' => 'anntena',
+        'login' => 'root',
+        'password' => 'root',
+        'database' => 'test',
 		'encoding' => 'utf8',
 	);
 
@@ -45,9 +45,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => '127.0.0.1',
-		'login' => 'root',
-		'password' => 'root',
-		'database' => 'anntena',
+        'login' => 'root',
+        'password' => 'root',
+        'database' => 'test',
 		'encoding' => 'utf8',
 	);
 
