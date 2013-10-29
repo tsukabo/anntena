@@ -1,0 +1,33 @@
+
+.mainmenu {
+	padding: 0px 30px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 6px;
+}
+.btn-lg2 {
+	padding: 20px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 6px;
+}
+
+.submenu {
+	padding: 0px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 6px;
+}
+
+.functionkey {
+	padding: 0px 10px;
+/*	font-size: 8px;*/
+}
+
+.hoge {
+	background-color: #ffee11;
+}
+
+.back {
+	background-color: #666666;
+}
