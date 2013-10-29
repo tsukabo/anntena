@@ -147,5 +147,5 @@ switch (env('CAKE_ENV_MODE')) {
 	default:
 		// prodction
 		require 'Bootstraps/production.php';
-	break;
+		break;
 }

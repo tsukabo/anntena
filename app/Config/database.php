@@ -68,7 +68,7 @@ class DATABASE_CONFIG {
 		case 'production':
 		default:
 			$this->default = $this->production;
-		break;
+			break;
 		}
 	}
 }
