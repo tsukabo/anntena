@@ -28,11 +28,11 @@ class AppController extends Controller {
 
     /**
      * components
-     * 
-     * @var array 
+     *
+     * @var array
      */
     public $components = array(
-        'Session', 
+        'Session',
         'RequestHandler',
         'Paginator',
         'Escape.Escape' => array('formDataEscape' => false),
@@ -52,7 +52,7 @@ class AppController extends Controller {
     /**
      * helpers
      *
-     * @var array 
+     * @var array
      */
     public $helpers = array(
         'Session',
@@ -65,17 +65,17 @@ class AppController extends Controller {
 //        'Form',
 //        'Session',
 //    );
-    
+
     /**
      * viewClass
      *
      * @var string
      */
     public $viewClass = 'Partial';
-    
+
     /**
      * constructor
-     * 
+     *
      * @access public
      * @return void
      */
@@ -103,7 +103,7 @@ class AppController extends Controller {
 
     /**
      * __setDebugKit
-     * 
+     *
      * @access private
      * @return void
      */

@@ -65,15 +65,17 @@ Cache::config('default', array('engine' => 'File', 'mask' => 0666));
 
 // デバッグ用ライブラリ
 App::import('Vendor', 'debuglib');
+App::import('Vendor', 'magpierss'.DS.'rss_fetch.inc');
 
 // Cakeプラグイン
+CakePlugin::load('BoostCake');
+CakePlugin::load('Cakeplus');
 CakePlugin::load('DebugKit');
 CakePlugin::load('Escape');
+CakePlugin::load('Exception', array('bootstrap' => 'notifier'));
+CakePlugin::load('Partial');
 CakePlugin::load('Search');
 CakePlugin::load('Utils');
-CakePlugin::load('Cakeplus');
-CakePlugin::load('Partial');
-CakePlugin::load('Exception', array('bootstrap' => 'notifier'));
 
 // 定数等宣言
 require('define.php');
@@ -116,12 +118,12 @@ CakeLog::config('error', array(
 ));
 
 // Exception メール無視設定
-Configure::write('ExceptionNotifier.deniedException', array(
-	'NotFoundException',
-	'MissingControllerException',
-	'MissingActionException',
-	'ForbiddenException',
-));
+// Configure::write('ExceptionNotifier.deniedException', array(
+// 	'NotFoundException',
+// 	'MissingControllerException',
+// 	'MissingActionException',
+// 	'ForbiddenException',
+// ));
 
 /**
  * CakePHP MODE

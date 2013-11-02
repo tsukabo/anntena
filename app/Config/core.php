@@ -43,6 +43,7 @@
  */
 	Configure::write('Error', array(
 		'handler' => 'ErrorHandler::handleError',
+		//'level' => E_ALL & ~E_DEPRECATED  & ~E_STRICT,
 		'level' => E_ALL & ~E_DEPRECATED,
 		'trace' => true
 	));
@@ -368,8 +369,3 @@ Cache::config('_cake_model_', array(
 	'duration' => $duration,
 	'mask' => 0666
 ));
-
-/**
- * Application language
- */
-	Configure::write( 'Config.language' , "jpn" );
