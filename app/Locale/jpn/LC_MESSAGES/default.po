@@ -1,0 +1,293 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-11-30 15:29+0900\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/CategoriesController.php:61;82
+msgid "The category has been saved."
+msgstr ""
+
+#: Controller/CategoriesController.php:64;85
+msgid "The category could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CategoriesController.php:78;103
+msgid "Invalid category"
+msgstr ""
+
+#: Controller/CategoriesController.php:107
+msgid "The category has been deleted."
+msgstr ""
+
+#: Controller/CategoriesController.php:109
+msgid "The category could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/WebsitesController.php:74;95
+msgid "The website has been saved."
+msgstr ""
+
+#: Controller/WebsitesController.php:77;98
+msgid "The website could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/WebsitesController.php:91;116
+msgid "Invalid website"
+msgstr ""
+
+#: Controller/WebsitesController.php:120
+msgid "The website has been deleted."
+msgstr ""
+
+#: Controller/WebsitesController.php:122
+msgid "The website could not be deleted. Please, try again."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:18
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:27
+msgid "Alert notice message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:30;41
+msgid "Alert success message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:34
+msgid "Alert error message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:45
+msgid "Alert info message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:49
+msgid "Alert warning message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:53
+msgid "Alert danger message testing..."
+msgstr ""
+
+#: Plugin/Cakeplus/Model/Behavior/ValidationErrorI18nBehavior.php:97
+msgid "Invalid Email address."
+msgstr ""
+
+#: Plugin/Cakeplus/Model/Behavior/ValidationErrorI18nBehavior.php:98
+msgid "Between %2$d and %3$d characters."
+msgstr ""
+
+#: Plugin/Exception/Lib/Error/ExceptionException.php:10
+msgid "Exception Error."
+msgstr ""
+
+#: Plugin/Exception/Lib/Error/InvalidParameterException.php:13
+msgid "Invalid Parameter Error."
+msgstr ""
+
+#: Plugin/Exception/Lib/Error/ValidationException.php:13
+msgid "Validation Error."
+msgstr ""
+
+#: Plugin/Utils/Error/EmailErrorHandler.php:117
+msgid "Error notification from CakePHP Certification"
+msgstr ""
+
+#: Plugin/Utils/Lib/I18nCountry.php:55
+msgid "Invalid setting for key: Use iso, name, iso3, numcode or printableName."
+msgstr ""
+
+#: Plugin/Utils/Lib/I18nCountry.php:342
+msgid "Invalid argument #1: %s is not a valid %s identifyer."
+msgstr ""
+
+#: Plugin/Utils/View/Emails/html/error_notification.ctp:1
+msgid "An Error happened"
+msgstr ""
+
+#: Plugin/Utils/View/Emails/html/error_notification.ctp:5
+#: Plugin/Utils/View/Emails/text/error_notification.ctp:3
+msgid "Code: %s"
+msgstr ""
+
+#: Plugin/Utils/View/Emails/html/error_notification.ctp:6
+#: Plugin/Utils/View/Emails/text/error_notification.ctp:4
+msgid "File: %s"
+msgstr ""
+
+#: Plugin/Utils/View/Emails/html/error_notification.ctp:7
+#: Plugin/Utils/View/Emails/text/error_notification.ctp:5
+msgid "Line: %d"
+msgstr ""
+
+#: Plugin/Utils/View/Emails/html/error_notification.ctp:11
+msgid "Description"
+msgstr ""
+
+#: Plugin/Utils/View/Emails/html/error_notification.ctp:16
+msgid "Context"
+msgstr ""
+
+#: Plugin/Utils/View/Emails/html/error_notification.ctp:21
+msgid "Trace"
+msgstr ""
+
+#: Plugin/Utils/View/Emails/html/error_notification.ctp:28
+msgid "Session Data"
+msgstr ""
+
+#: Plugin/Utils/View/Emails/html/error_notification.ctp:35
+msgid "Server Data"
+msgstr ""
+
+#: Plugin/Utils/View/Emails/html/error_notification.ctp:42
+msgid "Request Data"
+msgstr ""
+
+#: View/Articles/index.ctp:11
+msgid "time"
+msgstr "時刻"
+
+#: View/Articles/index.ctp:12
+msgid "title"
+msgstr "タイトル"
+
+#: View/Articles/index.ctp:13
+msgid "site"
+msgstr "サイト"
+
+#: View/Articles/index.ctp:14
+#: View/Elements/navi_top.ctp:14
+msgid "hatena"
+msgstr "はてな"
+
+#: View/Categories/_form.ctp:3
+msgid "category_name"
+msgstr "カテゴリ名"
+
+#: View/Categories/add.ctp:6
+#: View/Websites/add.ctp:6
+msgid "Add %s"
+msgstr "%s新規登録"
+
+#: View/Categories/add.ctp:6
+#: View/Categories/edit.ctp:6
+msgid "Category"
+msgstr "カテゴリ"
+
+#: View/Categories/add.ctp:8
+#: View/Categories/edit.ctp:8
+#: View/Websites/add.ctp:8
+#: View/Websites/edit.ctp:8
+msgid "Submit"
+msgstr "登録"
+
+#: View/Categories/edit.ctp:6
+#: View/Websites/edit.ctp:6
+msgid "Edit %s"
+msgstr "編集"
+
+#: View/Categories/index.ctp:5
+#: View/Websites/index.ctp:5
+msgid "New"
+msgstr "新規登録"
+
+#: View/Categories/index.ctp:16
+#: View/Websites/index.ctp:17
+msgid "Actions"
+msgstr "操作"
+
+#: View/Categories/index.ctp:28
+#: View/Websites/index.ctp:30
+msgid "Edit"
+msgstr "編集"
+
+#: View/Categories/index.ctp:29
+#: View/Websites/index.ctp:31
+msgid "Delete"
+msgstr "削除"
+
+#: View/Categories/index.ctp:29
+#: View/Websites/index.ctp:31
+msgid "Are you sure you want to delete # %s?"
+msgstr "本当に削除しますか？"
+
+#: View/Elements/counter.ctp:2
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr "{:page}/{:pages}ページ, 全{:count}件中{:current}件を表示"
+
+#: View/Elements/navi_top.ctp:9
+msgid "My antena"
+msgstr "俺アンテナ"
+
+#: View/Elements/navi_top.ctp:15
+msgid "2ch"
+msgstr "2ch"
+
+#: View/Elements/navi_top.ctp:16
+msgid "Computer"
+msgstr "コンピュータ"
+
+#: View/Elements/navi_top.ctp:17
+msgid "life"
+msgstr "ライフハック"
+
+#: View/Elements/navi_top.ctp:18
+msgid "news"
+msgstr "ニュース"
+
+#: View/Elements/navi_top.ctp:19
+msgid "sports"
+msgstr "スポーツ"
+
+#: View/Elements/navi_top.ctp:21
+msgid "webstie"
+msgstr "WEBサイト"
+
+#: View/Elements/navi_top.ctp:22
+msgid "category"
+msgstr "カテゴリ"
+
+#: View/Websites/_form.ctp:3
+msgid "category_id"
+msgstr "カテゴリID"
+
+#: View/Websites/_form.ctp:11
+msgid "website_name"
+msgstr "WEBサイト名"
+
+#: View/Websites/_form.ctp:20
+msgid "website_url"
+msgstr "WEBサイトURL"
+
+#: View/Websites/_form.ctp:29
+msgid "website_rss"
+msgstr "WEBサイトRSS"
+
+#: View/Websites/add.ctp:6
+#: View/Websites/edit.ctp:6
+msgid "Website"
+msgstr "WEBサイト"
+
+msgid "delete_flg"
+msgstr "状態"
+
+msgid "created"
+msgstr "作成日時"
+
+msgid "modified"
+msgstr "更新日時"
+
