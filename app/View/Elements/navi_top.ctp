@@ -6,17 +6,21 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<span class="navbar-brand">Myアンテナ</span>
+				<span class="navbar-brand"><?php echo $this->Html->link(__('My antena'), array('controller' => 'Articles', 'action' => 'index')); ?></span>
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="<?php echo $this->Html->url('/'); ?>">ホーム</a></li>
-					<li><a href="<?php echo $this->Html->url('/hatena'); ?>">はてな</a></li>
-					<li><a href="<?php echo $this->Html->url('/tech'); ?>">技術</a></li>
-					<li><a href="<?php echo $this->Html->url('/computer'); ?>">コンピュータ</a></li>
-					<li><a href="<?php echo $this->Html->url('/news'); ?>">一般ニュース</a></li>
-					<li><a href="<?php echo $this->Html->url('/sports'); ?>">スポーツ</a></li>
-					<li><a href="<?php echo $this->Html->url('/2ch'); ?>">2ch</a></li>
+				<?php if ($this->name == 'Articles') :?>
+					<li><?php echo $this->Html->link(__('hatena'), array('action' => 'index', 1)); ?></li>
+					<li><?php echo $this->Html->link(__('2ch'), array('action' => 'index', 2)); ?></li>
+					<li><?php echo $this->Html->link(__('Computer'), array('action' => 'index', 3)); ?></li>
+					<li><?php echo $this->Html->link(__('life'), array('action' => 'index', 4)); ?></li>
+					<li><?php echo $this->Html->link(__('news'), array('action' => 'index', 5)); ?></li>
+					<li><?php echo $this->Html->link(__('sports'), array('action' => 'index', 6)); ?></li>
+				<?php else :?>
+					<li><?php echo $this->Html->link(__('webstie'), array('controller' => 'websites' ,'action' => 'index')); ?></li>
+					<li><?php echo $this->Html->link(__('category'), array('controller' => 'categories' ,'action' => 'index')); ?></li>
+				<?php endif ?>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>

@@ -6,12 +6,6 @@ App::uses('AppController', 'Controller');
  * @property Article $Article
  * @property PaginatorComponent $Paginator
  */
-
-/* MagpieRSS用設定*/
-include_once(APP.'Vendor/magpierss/rss_fetch.inc');
-define('MAGPIE_OUTPUT_ENCODING','UTF-8');//Encode
-define('MAGPIE_CACHE_AGE','1800');//Cacheを残す時間
-
 class ArticlesController extends AppController {
 
 /**
@@ -22,13 +16,26 @@ class ArticlesController extends AppController {
 	public $components = array('Paginator');
 
 /**
+ * use models
+ *
+ * @var array
+ */
+	public $uses = array('Article');
+
+/**
  * index method
  *
  * @return void
  */
-	public function index() {
-		$this->Article->recursive = 0;
-		$this->set('articles', $this->Paginator->paginate());
+	public function index($id = null) {
+		$query = array( 'contain' => array('Website'),
+											'limit' => 100,
+											'order' => array('Article.created' => 'desc'));
+		if (!empty($id)) {
+			$query['conditions'] = array('Article.category_id' => $id);
+		}
+		$this->Paginator->settings = $query;
+		$this->set('articles', $this->Paginator->paginate('Article'));
 	}
 
 /**
@@ -118,15 +125,4 @@ class ArticlesController extends AppController {
 		return $this->redirect(array('action' => 'index'));
 	}
 */
-
-/**
- * getarticle method
- *
- * @return void
- */
-	public function getarticle() {
-
-		$rss = fetch_rss('http://k1low.hatenablog.com/rss');
-		print_a($rss);
-	}
 }

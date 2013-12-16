@@ -40,7 +40,6 @@ class AutomaticcollectionShell extends AppShell {
 		$query = array('contain' => array('Category'),
 						'order' => array('Website.id' => 'asc'));
 		$sitelist = $this->Website->find('all', $query);
-//var_dump($sitelist); exit;
 
 		$rssItemsArray = array();
 		$rssArray = array();
@@ -63,7 +62,6 @@ class AutomaticcollectionShell extends AppShell {
 					$rssItemsArray[] = $rss->items;
 				}
 			}
-//print_a($rssItemsArray); exit;
 
 			//配列を統合する
 			for($i = 0 ; $i < count($rssItemsArray) ; $i++) {
@@ -116,62 +114,27 @@ class AutomaticcollectionShell extends AppShell {
 										'created' => $date); //配列
 				}
 			}
-//var_dump($rssArray); exit;
 
 			foreach ($rssArray as $key => $value) {
-//var_dump($key);
 				// 登録済確認
 				$query = array('contain' => array(), 'conditions' => array('article_url' => $value['article_url']));
 				$tmp = $this->Article->find('list', $query);
 				if (!empty($tmp)) {
 					continue;
 				}
-//var_dump($value); exit;
 				// 登録
 				$this->Article->create();
 				$this->Article->save($value);
 			}
-
-//var_dump($rssArray);
-
-/*
-//配列をユーザー定義関数でソート※date降順
-function cmp($a, $b) {
-if ($a[0] == $b[0]) return 0;
-return ($a[0] > $b[0]) ? -1 : 1;
-}
-usort($rssArray, 'cmp');
-
-//必要な件数分だけHTML整形
-if(count($rssArray) > $num){$count=$num;}
-else{$count=count($rssArray);}
-for ($i=0; $i<$count; $i++) {
-$date=date("m/d H:i",strtotime($rssArray[$i][0]));
-$title=$rssArray[$i][1];
-$link=$rssArray[$i][2];
-$site_title=$rssArray[$i][3];
-$site_link=$rssArray[$i][4];
-$gazo=$rssArray[$i][5];
-    $datelink = "<div class='date'>$date</div>";
-    $titlelink = "<div class='title'><a href='$link'>$title</a></div>";
-    $site_titlelink = "<div class='site_title'><a href='$site_link'>$date - [$site_title]</a></div>";
-    if (empty($gazo[0])) {$gazolink = "";}//画像がないときの処理
-    else{$gazolink = "<a target='_blank' href='$link'><div class='trim'><img src='$gazo[0]' alt='' /></div></a>";}
-        echo "<article>$gazolink$titlelink$site_titlelink</article>";
-}//--▲for--
-*/
-
 		}
 	}
 
-
-
-//$this->out("hello");
-
-
 }
 
-
-// /bin/sh ./app/Console/cake Automaticcollection
-
-///bin/sh /var/www/html/anntena/app/Console/cake Automaticcollection
+// crontab -e こんな風に書いたらいいよ
+//SHELL=/bin/bash
+//PATH=/sbin:/bin:/usr/sbin:/usr/bin
+//MAILTO=""
+//HOME=/
+//
+//*/5 * * * * php /var/www/html/anntena/app/Console/cake.php Automaticcollection

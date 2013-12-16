@@ -1,5 +1,4 @@
 /app/tmp/*
 /app/Config/database.php
-/table_script(mysql).xls
 
 !/app/tmp/empty

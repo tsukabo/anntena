@@ -16,6 +16,26 @@ class WebsitesController extends AppController {
 	public $components = array('Paginator');
 
 /**
+ * use models
+ *
+ * @var array
+ */
+    public $uses = array('Website', 'Category');
+
+/**
+ * beforeFilter
+ *
+ * @access public
+ * @return void
+ */
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $query = array('fields' => array('id', 'category_name'), 'order' => array('id' => 'asc'));
+        $categorylist = $this->Category->find('list', $query);
+        $this->set(compact('categorylist'));
+    }
+
+/**
  * index method
  *
  * @return void
@@ -32,6 +52,7 @@ class WebsitesController extends AppController {
  * @param string $id
  * @return void
  */
+/*
 	public function view($id = null) {
 		if (!$this->Website->exists($id)) {
 			throw new NotFoundException(__('Invalid website'));
@@ -39,6 +60,7 @@ class WebsitesController extends AppController {
 		$options = array('conditions' => array('Website.' . $this->Website->primaryKey => $id));
 		$this->set('website', $this->Website->find('first', $options));
 	}
+*/
 
 /**
  * add method
@@ -100,4 +122,5 @@ class WebsitesController extends AppController {
 			$this->Session->setFlash(__('The website could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+}

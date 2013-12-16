@@ -28,10 +28,9 @@ class AppModel extends Model {
     public $actsAs = array(
         'Containable',
         'Search.Searchable',
-        /*
         'Utils.SoftDelete' => array(
              'delete_flg' => 'deleted'
-        ),*/
+        ),
     );
 
     /**

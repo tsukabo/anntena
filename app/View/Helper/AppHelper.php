@@ -31,4 +31,25 @@ App::uses('Helper', 'View');
  * @package       app.View.Helper
  */
 class AppHelper extends Helper {
+
+	public $helpers = array('Html');
+
+	/**
+	 * 削除済フラグ
+	 * deleteFlg
+	 *
+	 * @param type $deleteFlg
+	 * @return type
+	 */
+	public function deleteFlg($deleteFlg=false) {
+		switch ($deleteFlg) {
+			case true:
+				return $this->Html->tag('span', '削除済', array('class'=>'label label-danger'));
+				break;
+			default:
+				return $this->Html->tag('span', '未削除', array('class'=>'label label-primary'));
+				break;
+		}
+	}
+
 }

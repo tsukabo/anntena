@@ -16,6 +16,13 @@ class CategoriesController extends AppController {
 	public $components = array('Paginator');
 
 /**
+ * use models
+ *
+ * @var array
+ */
+    public $uses = array('Category');
+
+/**
  * index method
  *
  * @return void
@@ -32,6 +39,7 @@ class CategoriesController extends AppController {
  * @param string $id
  * @return void
  */
+/*
 	public function view($id = null) {
 		if (!$this->Category->exists($id)) {
 			throw new NotFoundException(__('Invalid category'));
@@ -39,6 +47,7 @@ class CategoriesController extends AppController {
 		$options = array('conditions' => array('Category.' . $this->Category->primaryKey => $id));
 		$this->set('category', $this->Category->find('first', $options));
 	}
+*/
 
 /**
  * add method
@@ -100,4 +109,5 @@ class CategoriesController extends AppController {
 			$this->Session->setFlash(__('The category could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+}

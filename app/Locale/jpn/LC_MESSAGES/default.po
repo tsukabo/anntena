@@ -291,3 +291,7 @@ msgstr "作成日時"
 msgid "modified"
 msgstr "更新日時"
 
+
+msgid "favor"
+msgstr "人気"
+
